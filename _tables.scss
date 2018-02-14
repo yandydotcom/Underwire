@@ -1,0 +1,88 @@
+@import "settings";
+
+table {
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
+}
+
+td {
+  .fa {
+    margin-right: 8px;
+  }
+  &.icon-only {
+    .fa {
+      margin-left: 16px;
+    }
+  }
+}
+
+th,
+td {
+  padding: 8px 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  border-bottom: 1px solid $gray-300;
+}
+
+th:first-child,
+td:first-child {
+  //padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  //padding-right: 0;
+}
+
+.table-head {
+  //background-color: $gray-100;
+}
+
+tr {
+  &.borderless {
+    > td {
+      border-bottom: 1px solid transparent !important;
+    }
+  }
+
+  &.pt-md {
+    > td {
+      padding-top: 16px;
+    }
+  }
+
+  .table-actions {
+    text-align: right;
+
+    .button, button {
+      opacity: 0;
+    }
+
+    .fa {
+      font-size: 14px;
+    }
+  }
+
+  &:hover {
+    .table-actions {
+      .button, button {
+        opacity: 1;
+      }
+    }
+
+  }
+}
+
+.table {
+  tr {
+    &:not(.table-head):hover {
+      background-color: rgba(0,0,0,0.2);
+    }
+  }
+}
