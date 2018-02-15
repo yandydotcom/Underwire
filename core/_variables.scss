@@ -96,7 +96,8 @@ $global-z-index-map: (
         overlay: 11
 );
 
-@import "utils/mixins";
+@import "mixins/mixins-all";
 
 $text-size-small: 0.75rem;
 $text-color-light: $gray-text;
+

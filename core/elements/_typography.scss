@@ -1,0 +1,125 @@
+html, .root {
+  font-size: 16px;
+
+}
+
+body, .article {
+  font-family: 'Lato', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h1, .h1 {
+  font-size: 2.21428571rem;
+  line-height: 1.35483871rem;
+  //text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+h2, .h2 {
+  font-size: 1.71428571rem;
+  line-height: 1.75rem;
+  //text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+h3, .h3 {
+  font-size: 1.28571429rem;
+  line-height: 1.16666667rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+h4, .h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+h5, .h5 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 16px;
+}
+
+ul, ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+b, i, strong, em, small, code {
+  line-height: 0;
+}
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5rem;
+}
+
+sub {
+  bottom: -0.25rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: $yandy-pink;
+  }
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-light {
+  opacity: 0.35 !important;
+}
+
+.text-small {
+  font-size: $text-size-small !important;
+}
+
+.text-pink {
+  color: $yandy-pink !important;
+}
+
+.text-gray {
+  color: $gray-text !important;
+}
+
+.text-error {
+  color: $red-text !important;
+}
+
+.text-success {
+  color: $green-text !important;
+}
+
+.text-positive {
+  color: $green !important;
+}
