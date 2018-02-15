@@ -1,0 +1,26 @@
+/*
+  Import core framework.
+ */
+@import "core/core";
+
+/*
+  ~ OPTIONAL ~
+  Import individual elements/components as needed.
+  TODO Write Imports for individual components. Can probably copy from each *-all.scss file in /core.
+ */
+
+//@import "core/variables";
+//@import "core/utils/colors";
+//@import "core/mixins/mixins-all";
+//@import "core/layout/grid";
+//@import "core/elements/typography";
+//@import "core/elements/icons";
+//@import "core/elements/buttons";
+//@import "core/elements/media";
+//@import "core/elements/tables";
+//@import "core/elements/forms";
+//@import "core/components/accordions";
+//@import "core/components/dropdowns";
+//@import "core/components/flybox";
+//@import "core/components/tabs";
+//@import "core/components/menus";
