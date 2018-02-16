@@ -1,0 +1,19 @@
+$border-positions: (
+        t: 'top',
+        b: 'bottom',
+        r: 'right',
+        l: 'left',
+        a: 'all'
+);
+
+@each $letter, $pos in $border-positions {
+  .b#{$letter} {
+    @if ($pos == 'all') {
+      border: 1px solid $global-border-color !important;
+      //background-color: #fff;
+    } @else {
+      border-#{$pos}: 1px solid $global-border-color !important;
+      //background-color: #fff;
+    }
+  }
+}

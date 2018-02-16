@@ -15,8 +15,37 @@
     <![endif]-->
 </head>
 
-<body>
-<h1>Yandy Underwire Docs</h1>
-<script src="js/scripts.js"></script>
+<body id="content">
+<section id="header" class="p-md">
+    <h1 class="h1">Yandy.com Underwire Docs</h1>
+</section>
+<div class="grid">
+    <div class="g4">
+        <div class="p-md">
+            <label>Table of Contents</label>
+            <div class="docs-menu">
+                <div class="dropdown">
+                    <div class="dropdown__head py-sm bb pointer">
+                        <i class="fa fa-circle-o mr-sm hide"></i>
+                        <i class="fa fa-check-circle mr-sm"></i>
+                        <div class="label">Dropdown Title</div>
+                    </div>
+                    <div class="dropdown__content py-md">
+                        Dropdown Content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="g8">
+
+</div>
+<script src="underwire.js"></script>
+<script>
+    (function () {
+        Underwire.init();
+    })();
+</script>
 </body>
 </html>
