@@ -1,0 +1,28 @@
+{
+  "name": "yandy-underwire",
+  "version": "0.0.0",
+  "description": "SCSS Framework for Yandy.com",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yandydotcom/Underwire.git"
+  },
+  "author": "Brendan T. Norris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yandydotcom/Underwire/issues"
+  },
+  "homepage": "https://github.com/yandydotcom/Underwire#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.4.0",
+    "gulp-css-scss": "^0.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
