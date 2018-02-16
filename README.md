@@ -1,2 +1,2 @@
 # Underwire
-Underwire - The Yandy.com SCSS Framework
+SCSS Framework for Yandy.com
