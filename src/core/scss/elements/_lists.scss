@@ -1,0 +1,17 @@
+ul {
+  text-align: left;
+
+  li {
+    padding: 2px 0;
+
+    a {
+      text-transform: none;
+      border-bottom: none;
+
+      &:hover {
+        color: map_get($brand-colors, yandy-pink);
+        border-bottom: 1px solid map_get($brand-colors, yandy-pink);
+      }
+    }
+  }
+}

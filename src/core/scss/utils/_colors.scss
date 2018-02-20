@@ -1,0 +1,11 @@
+@function color($color, $variant: null) {
+  @if ($variant != null) {
+    @return map_get(map_get($ui-colors, $color), $variant);
+  } @else {
+    @if (map-has_key($brand-colors, $color)) {
+      @return map_get($brand-colors, $color);
+    } @else {
+      @return map_get(map_get($ui-colors, $color), default);
+    }
+  }
+}
