@@ -1,8 +1,25 @@
 .dropdown {
-  .dropdown__head {
+
+  .dropdown-head {
+    padding-top: $spacing-sm;
+    padding-bottom: $spacing-sm;
+    @include border('bottom');
+    cursor: pointer;
+
+    i {
+      margin-right: $spacing-sm;
+    }
+    i:not(.active) {
+      display: none;
+    }
 
   }
-  .dropdown__content {
+
+  .dropdown-content {
     display: none;
+    //padding-top: $spacing-sm;
+    //padding-bottom: $spacing-sm;
+    padding: $spacing-sm;
   }
+
 }

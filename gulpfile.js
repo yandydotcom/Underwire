@@ -6,20 +6,23 @@ var browserify = require('browserify'),
     source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer'),
     browserSync = require('browser-sync');
+    debug = require('gulp-debug');
 
 /* pathConfig*/
-var entryPoint = './src/underwire.js',
+var jsEntryPoint = './src/underwire.js',
+    sassEntryPoint = './src/underwire.scss',
     browserDir = './docs/',
-    sassWatchPath = './src/**/*.scss',
-    jsWatchPath = './src/**/*.js',
+    sassWatchPath = './src/core/**/*.scss',
+    jsWatchPath = './src/core/**/*.js',
     htmlWatchPath = './**/*.html';
 /**/
 
 gulp.task('js', function () {
-    return browserify(entryPoint, {debug: true, extensions: ['es6']})
+    return browserify(jsEntryPoint, {debug: true, extensions: ['es6']})
         .transform("babelify", {presets: ["es2015"]})
         .bundle()
         .pipe(source('underwire.js'))
+        .pipe(debug({title: 'js:'}))
         .pipe(buffer())
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(sourcemaps.write())
@@ -37,7 +40,8 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src(sassWatchPath)
+    return gulp.src(sassEntryPoint)
+        .pipe(debug({title: 'scss:'}))
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
