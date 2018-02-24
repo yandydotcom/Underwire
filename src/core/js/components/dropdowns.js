@@ -1,5 +1,9 @@
 import $ from 'jquery';
 var Dropdown = {
+    init: function () {
+      var self = this;
+      self.bindActions();
+    },
     bindActions: function () {
         var self = this;
         var $dropdown = $('.dropdown-head');

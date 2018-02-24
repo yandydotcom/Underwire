@@ -4,7 +4,7 @@ import Components from './components/components-all';
 var Core = {
     bindComponents: function () {
       $.each(Components, function () {
-         this.bindActions();
+         this.init();
       });
     },
     'Components': Components,

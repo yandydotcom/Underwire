@@ -115,8 +115,6 @@ label > .label-body {
     }
   }
 
-
-
   &.error {
     color: $red-text;
 
@@ -198,4 +196,23 @@ label > .label-body {
 .input-helper {
   color: $gray-600;
   font-size: 0.75rem;
+  opacity: 0;
+}
+
+input {
+
+  &:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: $red-300;
+    background-color: $red-100;
+    color: $red-text;
+
+    & ~ .input-helper {
+      opacity: 1;
+    }
+  }
+
+  &:valid:not(:focus):not(:placeholder-shown) {
+    border-color: $green-300;
+  }
+
 }
