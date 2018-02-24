@@ -17,3 +17,7 @@ $border-positions: (
     }
   }
 }
+
+@mixin border($pos) {
+  border-#{$pos}: 1px solid $global-border-color;
+}

@@ -24,3 +24,10 @@ ul.horizontal {
     box-sizing: border-box;
   }
 }
+
+ul.menu {
+  * {
+    list-style-type: none;
+
+  }
+}

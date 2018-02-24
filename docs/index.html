@@ -9,7 +9,8 @@
     <meta name="author" content="SitePoint">
 
     <link rel="stylesheet" href="underwire.css">
-
+    <link rel="stylesheet"
+          href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -20,26 +21,47 @@
     <h1 class="h1">Yandy.com Underwire Docs</h1>
 </section>
 <div class="grid">
-    <div class="g4">
-        <div class="p-md">
-            <label>Table of Contents</label>
-            <div class="docs-menu">
-                <div class="dropdown">
-                    <div class="dropdown__head py-sm bb pointer">
-                        <i class="fa fa-circle-o mr-sm hide"></i>
-                        <i class="fa fa-check-circle mr-sm"></i>
-                        <div class="label">Dropdown Title</div>
-                    </div>
-                    <div class="dropdown__content py-md">
-                        Dropdown Content
-                    </div>
-                </div>
-            </div>
+    <div class="g2">
+        <label class="label">Table of Contents</label>
+        <div class="docs-menu">
+            <ul class="menu">
+                <li>
+                    Menu Item
+                    <ul>
+                        <li>Sub Item</li>
+                        <li>Sub Item</li>
+                        <li>Sub Item</li>
+                        <li>Sub Item</li>
+                    </ul>
+                </li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+                <li>Menu Item</li>
+            </ul>
         </div>
     </div>
-</div>
-<div class="g8">
+    <div class="g10">
+        <div class="docs-main p-lg ">
+            <div class="dropdown">
+                <div class="dropdown-head">
+                    <i class="fa fa-circle-o active"></i>
+                    <i class="fa fa-check-circle"></i>
+                    <label class="label">Dropdown Title</label>
+                </div>
+                <div class="dropdown-content">
+                    Dropdown Content
+                </div>
+            </div>
+            <div class="py-xl">
+                <label for="text-test">Type Hello</label>
+                <input type="text" id="text-test" required pattern="hello" placeholder="Say hello">
+                <div class="input-helper">Must say hello</div>
+            </div>
+        </div>
 
+    </div>
 </div>
 <script src="underwire.js"></script>
 <script>
