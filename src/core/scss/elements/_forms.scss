@@ -1,24 +1,3 @@
-form {
-  max-width: $global-max-width / 2;
-  margin: 0 auto;
-
-  //div[class^="g"]:not(.grid) {
-  //  padding: 0;
-  //}
-
-  .field {
-    margin-bottom: 16px;
-  }
-
-  .form-actions {
-    padding: 8px 0;
-
-    a {
-      margin: 0 16px;
-    }
-  }
-}
-
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -27,7 +6,7 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 textarea,
-select{
+select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
@@ -197,6 +176,35 @@ label > .label-body {
   color: $gray-600;
   font-size: 0.75rem;
   opacity: 0;
+}
+
+
+
+form {
+  max-width: $global-max-width / 2;
+  margin: 0 auto;
+
+  .form-actions {
+    padding: 8px 0;
+
+    a {
+      margin: 0 16px;
+    }
+  }
+}
+
+.field {
+  margin-bottom: $spacing-md;
+
+  .field-helper {
+    color: $gray-600;
+    font-size: 0.75rem;
+    opacity: 0;
+  }
+}
+
+.field-group {
+  margin-bottom: $spacing-md;
 }
 
 input {
