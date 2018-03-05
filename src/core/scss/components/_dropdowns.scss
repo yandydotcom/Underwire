@@ -5,6 +5,9 @@
     padding-bottom: $spacing-sm;
     @include border('bottom');
     cursor: pointer;
+    *{
+      cursor: pointer;
+    }
 
     i {
       margin-right: $spacing-sm;

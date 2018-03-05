@@ -43,7 +43,7 @@ gulp.task('sass', function () {
     return gulp.src(sassEntryPoint)
         .pipe(debug({title: 'scss:'}))
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
