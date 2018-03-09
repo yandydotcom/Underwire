@@ -1,24 +1,23 @@
-.hide {
-  display: none !important;
+.hide.hide {
+  display: none;
 }
 
-.show {
-  display: block !important;
+.show.show {
+  display: block;
 }
 
-.op-n {
-  opacity: 0 !important;
+.op-n.op-n {
+  opacity: 0;
 }
 
-.op-low {
-  opacity: 0.3333 !important;
+.op-low.op-low {
+  opacity: 0.3333;
 }
 
-.op-med {
-  opacity: 0.5 !important;
+.op-med.op-med {
+  opacity: 0.5;
 }
 
-.op-full {
-  opacity: 1 !important;
-
+.op-full.op-full {
+  opacity: 1;
 }
