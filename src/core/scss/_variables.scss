@@ -101,3 +101,17 @@ $global-z-index-map: (
 $text-size-small: 0.75rem;
 $text-color-light: $gray-text;
 
+$spacing-list: ('xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl', 'xxxxl');
+$spacing-base: index($spacing-list, 'sm'); // 2
+
+@import "utils/spacing";
+
+$spacing-xs: getSpacingValue(xs);
+$spacing-sm: getSpacingValue(sm);
+$spacing-md: getSpacingValue(md);
+$spacing-lg: getSpacingValue(lg);
+$spacing-xl: getSpacingValue(xl);
+$spacing-xxl: getSpacingValue(xxl);
+$spacing-xxxl: getSpacingValue(xxxl);
+$spacing-xxxxl: getSpacingValue(xxxxl);
+
