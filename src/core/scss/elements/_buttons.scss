@@ -1,7 +1,10 @@
-@mixin btn-base($btn-bg: $black, $btn-outline: $black, $btn-text: $white) {
+@import "../utils/colors";
+
+@mixin btn-base($btn-bg: $black, $btn-outline: $black, $btn-text: $white, $padding-x: $spacing-xl) {
   color: $btn-text;
   background-color: $btn-bg;
   border: 1px solid $btn-outline;
+  padding: 0 $padding-x;
 
   .fa {
     margin-right: 4px;
@@ -15,9 +18,18 @@
     outline: 0;
   }
 
+  @if (brightness($btn-bg) > 50%) {
+    &:hover {
+      background-color: darken($btn-bg, 10%);
+    }
+  } @else {
+    &:hover {
+      background-color: lighten($btn-bg, 10%);
+    }
+  }
+
   &:hover {
     outline: 0;
-    background-color: lighten($btn-bg, 10%);
     opacity: 1 !important;
     pointer-events: auto !important;
 
@@ -31,15 +43,14 @@
   }
 }
 
-@mixin btn-extend($bg, $outline, $text) {
-  @include btn-base($bg, $outline, $text);
+@mixin btn-extend($bg, $outline, $text, $padding: $spacing-xxl) {
+  @include btn-base($bg, $outline, $text, $padding);
 }
 
 .btn {
   display: inline-block;
   position: relative;
   height: 38px;
-  padding: 0 32px;
   text-align: center;
   font-size: 0.75em;
   line-height: 38px;
@@ -127,10 +138,15 @@
   }
 }
 
-.btn-inline {}
-
 .btn-disabled {
   opacity: 0.5;
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.btn-link {
+  $bg-color: $white;
+  $outline-color: transparent;
+  $text-color: $gray-600;
+  @include btn-extend($bg-color, $outline-color, $text-color, $spacing-md);
 }
