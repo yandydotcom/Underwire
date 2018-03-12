@@ -24,57 +24,57 @@
   $spacing: getSpacingValue($name);
 
   .p-#{$name} {
-    padding: $spacing !important;
+    padding: $spacing;
     box-sizing: border-box;
   }
   .pt-#{$name} {
-    padding-top: $spacing !important;
+    padding-top: $spacing;
     box-sizing: border-box;
   }
   .pb-#{$name} {
-    padding-bottom: $spacing !important;
+    padding-bottom: $spacing;
     box-sizing: border-box;
   }
   .pr-#{$name} {
-    padding-right: $spacing !important;
+    padding-right: $spacing;
     box-sizing: border-box;
   }
   .pl-#{$name} {
-    padding-left: $spacing !important;
+    padding-left: $spacing;
     box-sizing: border-box;
   }
   .py-#{$name} {
-    padding-top: $spacing !important;
-    padding-bottom: $spacing !important;
+    padding-top: $spacing;
+    padding-bottom: $spacing;
     box-sizing: border-box;
   }
   .px-#{$name} {
-    padding-left: $spacing !important;
-    padding-right: $spacing !important;
+    padding-left: $spacing;
+    padding-right: $spacing;
     box-sizing: border-box;
   }
 
   .m-#{$name} {
-    margin: $spacing !important;
+    margin: $spacing;
   }
   .mt-#{$name} {
-    margin-top: $spacing !important;
+    margin-top: $spacing;
   }
   .mb-#{$name} {
-    margin-bottom: $spacing !important;
+    margin-bottom: $spacing;
   }
   .mr-#{$name} {
-    margin-right: $spacing !important;
+    margin-right: $spacing;
   }
   .ml-#{$name} {
-    margin-left: $spacing !important;
+    margin-left: $spacing;
   }
   .my-#{$name} {
-    margin-top: $spacing !important;
-    margin-bottom: $spacing !important;
+    margin-top: $spacing;
+    margin-bottom: $spacing;
   }
   .mx-#{$name} {
-    margin-left: $spacing !important;
-    margin-right: $spacing !important;
+    margin-left: $spacing;
+    margin-right: $spacing;
   }
 }
