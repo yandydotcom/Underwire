@@ -104,7 +104,22 @@ $text-color-light: $gray-text;
 $spacing-list: ('xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl', 'xxxxl');
 $spacing-base: index($spacing-list, 'sm'); // 2
 
-@import "utils/spacing";
+@function getSpacingValue($v) {
+  $result: null;
+
+  @if (index($spacing-list, $v) < $spacing-base) {
+
+    $x: index($spacing-list, $v) + 1;
+    $result: $global-baseline-grid / $x;
+
+  } @else {
+
+    $x: index($spacing-list, $v) - 1;
+    $result: $global-baseline-grid * $x;
+
+  }
+  @return $result;
+}
 
 $spacing-xs: getSpacingValue(xs);
 $spacing-sm: getSpacingValue(sm);
