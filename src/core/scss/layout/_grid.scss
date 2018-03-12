@@ -31,10 +31,12 @@
   }
 
   &.center-columns {
-    [class^="g"]:not(.grid) {
-      margin: 0 auto;
-      float: none;
-    }
+    margin: 0 auto;
+    width: auto;
+    //[class^="g"]:not(.grid) {
+    //  margin: 0 auto;
+    //  float: none;
+    //}
   }
 }
 
