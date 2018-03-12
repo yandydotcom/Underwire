@@ -91,7 +91,7 @@
 
 .btn-outline {
   $bg-color: rgba(0,0,0,0);
-  $outline-color: $gray-700;
+  $outline-color: $gray-300;
   $text-color: $gray-700;
   @include btn-extend($bg-color, $outline-color, $text-color);
 }
